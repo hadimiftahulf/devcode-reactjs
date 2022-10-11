@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+#root{
+  box-sizing: border-box;
+  width: 100%;
+}
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title{
+  font-weight: 700 !important;
+  font-size: 24px !important;
+}
+
+.header{
+  background-color: #16ABF8 !important;
+  height: 105px;
+  padding-top: 20px;
+  box-shadow: none !important;
+}
+
+.box-title{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 43px;
+}
+
+.title-box{
+  font-weight: 700 !important;
+  font-size: 36px !important;
+}
+
+.button-add{
+  border-radius: 45px !important;
+  width: 159px !important;
+  background-color: #16ABF8 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  text-transform: none !important;
+}
+
+.button-confirm {
+  padding: 13px 3px !important;
+  border-radius: 45px !important;
+  width: 159px !important;
+  background-color: #ED4C5C !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  text-transform: none !important;
+}
+
+.button-cancel {
+  padding: 13px 3px !important;
+  border-radius: 45px !important;
+  width: 159px !important;
+  background-color: #F4F4F4 !important;
+  color: black !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  text-transform: none !important;
+}
+
+/* new css */
+.container-dashboard {
+  padding-top: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+@media screen and (max-width : 770px) {
+  .container-dashboard {
+    grid-template-columns: 1fr 1fr;
+  }.css-hyum1k-MuiToolbar-root {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  
+}
+@media screen and (max-width : 476px) {
+  .container-dashboard {
+    grid-template-columns: 1fr;
+  }
+  .css-hyum1k-MuiToolbar-root{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-detail{
+  padding: 22px 0px 25px 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.item-detail{
+  margin-bottom: 10px;
+  width: auto;
+  height: 80px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+  align-items: center
+}
+
+.card-dashboard {
+  height: 234px;
+  max-width: 235px;
+  background-color: white;
+  box-shadow:0 4px 8px rgb(0 0 0 / 15%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  padding: 22px 20px 25px 27px;
+  margin-bottom: 10px;
+
+}
+
+.empty-data{
+  cursor: pointer;
+  padding-top: 65px;
+  width: 767px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.empty-data > img{
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.content-activity{
+  display: flex;
+  height: 50%;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-title{
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+.text-small {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}.text-small-bold {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.title-alert{
+  font-weight:500 ; 
+  font-size : 18px ;
+  line-height: 27px;
+}
+.title-alert > .bold{
+  font-weight: 700;
+}
+.textTransformNone{
+  text-transform: none !important;
+}
+.pointer{
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+}
+.fullWidth{
+  width: 100%;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.end{
+  align-items: flex-end;
+}
+
+.center{
+  align-items: center;
+  align-self: center;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.color-grey{
+  color:#888888;
+}
+
+.line-through{
+  text-decoration: line-through;
+}
+.color-red{
+  color:#ED4C5C;
+}
+.bg-red {
+  background-color: #ED4C5C;
+}.bg-orange {
+  background-color: #F8A541;
+}.bg-green {
+  background-color: #00A790;
+}.bg-blue {
+  background-color: #428BC1;
+}.bg-purple {
+  background-color: #8942C1;
 }
