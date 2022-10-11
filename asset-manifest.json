@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/devcode-reactjs/static/css/main.fa2a6f4d.css",
+    "main.js": "/devcode-reactjs/static/js/main.d5592a93.js",
+    "index.html": "/devcode-reactjs/index.html",
+    "main.fa2a6f4d.css.map": "/devcode-reactjs/static/css/main.fa2a6f4d.css.map",
+    "main.d5592a93.js.map": "/devcode-reactjs/static/js/main.d5592a93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa2a6f4d.css",
+    "static/js/main.d5592a93.js"
+  ]
+}
