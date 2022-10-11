@@ -17,7 +17,6 @@ import Select from '@mui/material/Select'
 import {API} from '../../utils/global'
 import axios from 'axios'
 import {colorBox} from '../../utils/helper'
-import {type} from '@testing-library/user-event/dist/type'
 
 const BootstrapDialog = styled(Dialog)(({theme}) => ({
   '& .MuiDialogContent-root': {
